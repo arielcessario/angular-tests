@@ -30,16 +30,39 @@
 <![endif]-->
 <div style="display: flex; flex-direction: column;">
     <div style="display: flex; flex-direction: row;">
-        <input ng-model="appCtrl.usuarioLogin.mail" type="text">
-        <input ng-model="appCtrl.usuarioLogin.password" type="text">
-        <button ng-click="appCtrl.login()">Login</button>
-        <button ng-click="appCtrl.logout()">Logout</button>
+        <div class="form-group">
+            <label>Mail</label>
+            <input class="form-control" ng-model="appCtrl.usuarioLogin.mail" type="text">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input class="form-control" ng-model="appCtrl.usuarioLogin.password" type="password">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="appCtrl.login()">Login</button>
+            <button class="btn btn-primary" ng-click="appCtrl.logout()">Logout</button>
+        </div>
     </div>
     <div style="display: flex; flex-direction: row;">
-        <input ng-model="appCtrl.usuarioFull.nombre" type="text">
-        <input ng-model="appCtrl.usuarioFull.apellido" type="text">
-        <input ng-model="appCtrl.usuarioFull.mail" type="text">
-        <button ng-click="appCtrl.create()">Guardar</button>
+        <div class="form-group">
+            <label class="">Nombre</label>
+            <input class="form-control" ng-model="appCtrl.usuarioFull.nombre" type="text">
+        </div>
+        <div class="form-group">
+            <label class="">Apellido</label>
+            <input class="form-control" ng-model="appCtrl.usuarioFull.apellido" type="text">
+        </div>
+        <div class="form-group">
+            <label class="">Mail</label>
+            <input class="form-control" ng-model="appCtrl.usuarioFull.mail" type="text">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input class="form-control" ng-model="appCtrl.usuarioFull.password" type="password">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="appCtrl.create()">Guardar</button>
+        </div>
     </div>
     <div style="display: flex; flex-direction: column;">
         <div ng-repeat="usuario in appCtrl.usuarios | limitTo:appCtrl.end:appCtrl.start">{{usuario.nombre}}</div>

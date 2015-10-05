@@ -46,7 +46,8 @@ function AppController(UserService, UserVars) {
         'profesion_id': 0,
         'saldo': '',
         'rol_id': 0,
-        'news_letter': 0
+        'news_letter': 0,
+        'password': ''
     };
     vm.usuarioLogin = {
         'mail': '',
