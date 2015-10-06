@@ -32,6 +32,9 @@ function AppController(UserService, UserVars) {
         vm.usuarios = data;
     });
 
+    vm.usuario = {
+        mail: ''
+    };
     vm.usuarioFull = {
         'nombre': '',
         'apellido': '',
@@ -75,6 +78,12 @@ function AppController(UserService, UserVars) {
             console.log(data);
         });
     };
+
+    vm.resetPwd = function() {
+        UserService.forgotPassword(vm.usuario.mail, function (data) {
+            console.log(data);
+        });
+    }
 
     vm.next = function () {
         vm.start = UserService.next().start;

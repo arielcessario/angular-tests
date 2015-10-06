@@ -29,7 +29,7 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 <div style="display: flex; flex-direction: column;">
-    <div style="display: flex; flex-direction: row;">
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
         <div class="form-group">
             <label>Mail</label>
             <input class="form-control" ng-model="appCtrl.usuarioLogin.mail" type="text">
@@ -38,12 +38,14 @@
             <label>Password</label>
             <input class="form-control" ng-model="appCtrl.usuarioLogin.password" type="password">
         </div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
         <div class="form-group">
             <button class="btn btn-primary" ng-click="appCtrl.login()">Login</button>
             <button class="btn btn-primary" ng-click="appCtrl.logout()">Logout</button>
         </div>
     </div>
-    <div style="display: flex; flex-direction: row;">
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
         <div class="form-group">
             <label class="">Nombre</label>
             <input class="form-control" ng-model="appCtrl.usuarioFull.nombre" type="text">
@@ -52,6 +54,8 @@
             <label class="">Apellido</label>
             <input class="form-control" ng-model="appCtrl.usuarioFull.apellido" type="text">
         </div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
         <div class="form-group">
             <label class="">Mail</label>
             <input class="form-control" ng-model="appCtrl.usuarioFull.mail" type="text">
@@ -60,14 +64,27 @@
             <label>Password</label>
             <input class="form-control" ng-model="appCtrl.usuarioFull.password" type="password">
         </div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
         <div class="form-group">
             <button class="btn btn-primary" ng-click="appCtrl.create()">Guardar</button>
         </div>
     </div>
-    <div style="display: flex; flex-direction: column;">
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
+        <div class="form-group">
+            <label class="">Mail</label>
+            <input class="form-control" ng-model="appCtrl.usuario.mail" type="text">
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="appCtrl.resetPwd()">Recupera contraseña</button>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; margin-left: 30px;">
         <div ng-repeat="usuario in appCtrl.usuarios | limitTo:appCtrl.end:appCtrl.start">{{usuario.nombre}}</div>
     </div>
-    <div style="display: flex; flex-direction: row;">
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
         <button ng-click="appCtrl.next()">next</button>
         <button ng-click="appCtrl.prev()">prev</button>
         <input type="text" ng-keyup="appCtrl.goToPagina()" ng-model="appCtrl.pagina">
