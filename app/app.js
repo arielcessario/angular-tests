@@ -24,6 +24,7 @@ function AppController(UserService, UserVars) {
     vm.usuarios = [];
     vm.start = 0;
     vm.pagina = UserVars.pagina;
+    vm.filtro = '';
     UserVars.paginacion = 3;
     UserVars.loginPath = '/login';
     vm.end = UserVars.paginacion;
@@ -98,4 +99,10 @@ function AppController(UserService, UserVars) {
     vm.goToPagina = function () {
         vm.start= UserService.goToPagina(vm.pagina).start;
     };
+
+    vm.filtrar = function(){
+        UserService.getByParams('usuario_id', vm.filtro, true, function(data){
+            console.log(data);
+        })
+    }
 }
