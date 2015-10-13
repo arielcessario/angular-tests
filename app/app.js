@@ -101,7 +101,7 @@ function AppController(UserService, UserVars) {
     };
 
     vm.filtrar = function(){
-        UserService.getByParams('usuario_id', vm.filtro, true, function(data){
+        UserService.getByParams('nombre', vm.filtro, true, function(data){
             console.log(data);
         })
     }
