@@ -7,6 +7,7 @@ angular.module('myApp', [
     'angular-storage',
     'angular-jwt',
     'acUsuarios',
+    'acProductos',
     'myApp.view1',
     'myApp.view2',
     'myApp.version'
@@ -84,7 +85,7 @@ function AppController(UserService, UserVars) {
         UserService.forgotPassword(vm.usuario.mail, function (data) {
             console.log(data);
         });
-    }
+    };
 
     vm.next = function () {
         vm.start = UserService.next().start;

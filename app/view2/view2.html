@@ -1,5 +1,39 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<div ng-controller="View2Ctrl as view2Ctrl">
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
+        <div class="form-group">
+            <label class="">Nombre</label>
+            <input class="form-control" ng-model="view2Ctrl.producto.nombre" type="text">
+        </div>
+        <div class="form-group">
+            <label class="">Descripción</label>
+            <input class="form-control" ng-model="view2Ctrl.producto.descripcion" type="text">
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
+        <div class="form-group">
+            <label class="">Punto Reposición</label>
+            <input class="form-control" ng-model="view2Ctrl.producto.pto_repo" type="text">
+        </div>
+        <div class="form-group">
+            <label>En Slider</label>
+            <select class="form-control" ng-model="view2Ctrl.producto.en_slider">
+                <option value="0">No</option>
+                <option value="1">Si</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Tipo de Producto</label>
+            <select class="form-control" ng-model="view2Ctrl.producto.producto_tipo">
+            <option value="0">Producto</option>
+            <option value="1">Insumo</option>
+            <option value="2">Kit</option>
+            <option value="3">Servicio</option>
+            </select>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-left: 30px;">
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="view2Ctrl.createProducto()">Guardar</button>
+        </div>
+    </div>
+</div>
