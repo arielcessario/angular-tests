@@ -87,6 +87,10 @@
             <label class="">Buscar</label>
             <input class="form-control" ng-model="appCtrl.filtro" ng-keyup="appCtrl.filtrar();" type="text">
         </div>
+        <div class="form-group">
+            <label class="">Panel de Búsqueda</label>
+            <input class="form-control" ac-search-panel service="UserService" exact-match="false" visible="nombre,apellido" ng-model="appCtrl.producto.nombre" objeto="appCtrl.producto" params="nombre,apellido" type="text">
+        </div>
     </div>
     <div style="display: flex; flex-direction: column; margin-left: 30px;">
         <div ng-repeat="usuario in appCtrl.usuarios | limitTo:appCtrl.end:appCtrl.start">{{usuario.nombre}}</div>
@@ -107,6 +111,7 @@
 <script src="bower_components/angular-cookies/angular-cookies.js"></script>
 <script src="bower_components/a0-angular-storage/dist/angular-storage.min.js"></script>
 <script src="bower_components/angular-jwt/dist/angular-jwt.min.js"></script>
+<script src="bower_components/ac-angular-utils/ac-utils.js"></script>
 <script src="bower_components/ac-angular-usuarios/ac-usuarios.js"></script>
 <script src="bower_components/ac-angular-productos/ac-productos.js"></script>
 <script src="app.js"></script>

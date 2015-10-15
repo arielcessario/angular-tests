@@ -13,12 +13,26 @@ angular.module('myApp.view2', ['ngRoute'])
     .controller('View2Ctrl', View2Ctrl);
 
 
-View2Ctrl.$inject = ['ProductService'];
-function View2Ctrl(ProductService) {
+View2Ctrl.$inject = ['ProductService', 'CartService'];
+function View2Ctrl(ProductService, CartService) {
 
 
     var vm = this;
+    vm.productos = [];
     vm.producto = {nombre: '', descripcion: '', pto_repo: 0, en_slider: '0', producto_tipo: '0'};
+
+    vm.carrito = {};
+
+
+
+    CartService.getByParams('status', 0, -1, function (data) {
+        console.log(data);
+    });
+
+
+    vm.addToCart = function () {
+        CartService.addToCart();
+    };
 
     ProductService.get(function (data) {
         console.log(data);
@@ -26,8 +40,8 @@ function View2Ctrl(ProductService) {
 
     vm.createProducto = function () {
 
-        ProductService.create(vm.producto, function(data){
-            console.log(data);
+        ProductService.create(vm.producto, function (data) {
+            vm.productos = data;
         });
     }
 

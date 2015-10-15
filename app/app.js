@@ -6,6 +6,7 @@ angular.module('myApp', [
     'ngCookies',
     'angular-storage',
     'angular-jwt',
+    'acUtils',
     'acUsuarios',
     'acProductos',
     'myApp.view1',
@@ -102,7 +103,7 @@ function AppController(UserService, UserVars) {
     };
 
     vm.filtrar = function(){
-        UserService.getByParams('nombre', vm.filtro, true, function(data){
+        UserService.getByParams('nombre,apellido', vm.filtro, false, function(data){
             console.log(data);
         })
     }

@@ -36,4 +36,6 @@
             <button class="btn btn-primary" ng-click="view2Ctrl.createProducto()">Guardar</button>
         </div>
     </div>
+
+    <div ng-repeat="producto in view2Ctrl.productos" ng-click="view2Ctrl.addToCart();">{{producto.nombre}}</div>
 </div>
