@@ -13,20 +13,29 @@
             justify-content: center;
         }
 
-        #upper-bar{
+        #upper-bar {
             flex: 1;
         }
-        #nav-bar{
+
+        #nav-bar {
             flex: 1;
         }
-        #view{
+
+        #view {
             flex: 6;
         }
-        #footer-bar{
+
+        #footer-bar {
             flex: 2;
+        }
+
+        .ac-autocomplete-selected {
+            background-color: black;
+            color: white;
         }
     </style>
     <script>
+        window.installPath = 'bower_components';
         // include angular loader, which allows the files to load in any order
         //@@NG_LOADER_START@@
         // You need to run `npm run update-index-async` to inject the angular async code here
@@ -114,7 +123,9 @@
                         '//cdn.auth0.com/js/lock-7.9.min.js',
                         '//cdn.auth0.com/w2/auth0-angular-4.min.js',
                         'https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.min.js',
-                        'bower_components/ac-angular-utils/ac-utils.js'
+                        'bower_components/ac-angular-utils/ac-utils.js',
+                        'bower_components/ac-angular-usuarios/ac-usuarios.js',
+                        'bower_components/ac-angular-autocomplete/ac-autocomplete.js'
                     ], 'segundo');
 
 
@@ -150,6 +161,15 @@
     <button ng-click="appCtrl.get();">Get</button>
     <button ng-click="appCtrl.post();">Post</button>
 </div>
+{{appCtrl.usuario1}}
+<ac-autocomplete fields-to-show="'nombre,apellido'"
+                 selected-to="appCtrl.usuario1"
+                 search-fields="'nombre,apellido,mail'"
+                 search-function="appCtrl.searchUsuario(callback)"></ac-autocomplete>
+<ac-autocomplete fields-to-show="'nombre,apellido'"
+                 selected-to="appCtrl.usuario2"
+                 search-fields="'nombre,apellido,mail'"
+                 search-function="appCtrl.searchUsuario(callback)"></ac-autocomplete>
 <div id="nav-bar"></div>
 <div ng-view id="view"></div>
 <div id="footer-bar"></div>
