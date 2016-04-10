@@ -25,8 +25,8 @@
 
         vm.searchUsuario = searchUsuario;
 
-        function searchUsuario(callback){
-            UserService.get(callback);
+        function searchUsuario(callback) {
+            UserService.get().then(callback);
         }
     }
 
