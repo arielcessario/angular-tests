@@ -11,7 +11,8 @@
         'auth0',
         'acUtils',
         'acUsuarios',
-        'acAutocomplete'
+        'acAutocomplete',
+        'LangTables'
     ]).config(['$routeProvider', function ($routeProvider) {
             $routeProvider.otherwise({redirectTo: '/view1'});
         }])

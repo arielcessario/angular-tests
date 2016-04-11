@@ -125,7 +125,8 @@
                         'https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.min.js',
                         'bower_components/ac-angular-utils/ac-utils.js',
                         'bower_components/ac-angular-usuarios/ac-usuarios.js',
-                        'bower_components/ac-angular-autocomplete/ac-autocomplete.js'
+                        'bower_components/ac-angular-autocomplete/ac-autocomplete.js',
+                        'includes/LangTables.js'
                     ], 'segundo');
 
 
@@ -161,6 +162,7 @@
     <button ng-click="appCtrl.get();">Get</button>
     <button ng-click="appCtrl.post();">Post</button>
 </div>
+<ac-usuarios test="lsls"></ac-usuarios>
 {{appCtrl.usuario1}}
 <ac-autocomplete fields-to-show="'nombre,apellido'"
                  selected-to="appCtrl.usuario1"
@@ -170,6 +172,8 @@
                  selected-to="appCtrl.usuario2"
                  search-fields="'nombre,apellido,mail'"
                  search-function="appCtrl.searchUsuario(callback)"></ac-autocomplete>
+
+
 <div id="nav-bar"></div>
 <div ng-view id="view"></div>
 <div id="footer-bar"></div>
