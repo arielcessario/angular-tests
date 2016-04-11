@@ -6,7 +6,9 @@
     function initialXlatTables(){
         return {
             es:{
-                ERROR_REQUIRED: 'El campo es requerido.'
+                ERROR_REQUIRED: 'El campo {{campo}} es requerido.',
+                NAME: 'Nombre',
+                LAST_NAME: 'Apellido'
             }
         }
     }
