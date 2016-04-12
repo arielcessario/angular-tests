@@ -10,6 +10,7 @@
                 NAME: 'Nombre',
                 LAST_NAME: 'Apellido',
                 LOGIN: 'Ingresar',
+                LOGOUT: 'Salir',
                 REGISTER: 'Registrarse'
             }
         }

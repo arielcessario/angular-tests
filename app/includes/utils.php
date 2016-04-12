@@ -119,8 +119,8 @@ class Main
         try {
 
             if ($this->permisssions[$class][$fnc] > -1) {
-//                checkSecurity();
-//                validateRol($this->permisssions[$class][$fnc]);
+                checkSecurity();
+                validateRol($this->permisssions[$class][$fnc]);
             }
         } catch (Exception $e) {
             echo 'Caught exception: ', $e->getMessage(), "\n";
