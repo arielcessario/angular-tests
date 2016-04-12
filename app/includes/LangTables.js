@@ -8,7 +8,9 @@
             es:{
                 ERROR_REQUIRED: 'El campo {{campo}} es requerido.',
                 NAME: 'Nombre',
-                LAST_NAME: 'Apellido'
+                LAST_NAME: 'Apellido',
+                LOGIN: 'Ingresar',
+                REGISTER: 'Registrarse'
             }
         }
     }

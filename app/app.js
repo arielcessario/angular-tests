@@ -11,6 +11,7 @@
         'auth0',
         'acUtils',
         'acUsuarios',
+        'acUsuariosAdministracion',
         'acAutocomplete',
         'LangTables'
     ]).config(['$routeProvider', function ($routeProvider) {

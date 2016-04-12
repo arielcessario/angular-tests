@@ -108,7 +108,9 @@ class Main
     public static $db;
     private $permisssions = array(
         'Usuarios' => array('get' => 1,
-            'po' => 0)
+            'po' => 0,
+            'login' => -1
+            )
     );
 
 

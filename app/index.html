@@ -36,6 +36,7 @@
     </style>
     <script>
         window.installPath = 'bower_components';
+        window.app = 'test';
         // include angular loader, which allows the files to load in any order
         //@@NG_LOADER_START@@
         // You need to run `npm run update-index-async` to inject the angular async code here
@@ -125,6 +126,7 @@
                         'https://cdn.rawgit.com/auth0/angular-jwt/master/dist/angular-jwt.min.js',
                         'bower_components/ac-angular-utils/ac-utils.js',
                         'bower_components/ac-angular-usuarios/ac-usuarios.js',
+                        'bower_components/ac-angular-usuarios/ac-usuarios-administracion.js',
                         'bower_components/ac-angular-autocomplete/ac-autocomplete.js',
                         'includes/LangTables.js'
                     ], 'segundo');
@@ -162,16 +164,17 @@
     <button ng-click="appCtrl.get();">Get</button>
     <button ng-click="appCtrl.post();">Post</button>
 </div>
-<ac-usuarios test="lsls"></ac-usuarios>
-{{appCtrl.usuario1}}
-<ac-autocomplete fields-to-show="'nombre,apellido'"
-                 selected-to="appCtrl.usuario1"
-                 search-fields="'nombre,apellido,mail'"
-                 search-function="appCtrl.searchUsuario(callback)"></ac-autocomplete>
-<ac-autocomplete fields-to-show="'nombre,apellido'"
-                 selected-to="appCtrl.usuario2"
-                 search-fields="'nombre,apellido,mail'"
-                 search-function="appCtrl.searchUsuario(callback)"></ac-autocomplete>
+<!--<ac-usuarios-administracion test="lsls"></ac-usuarios-administracion>-->
+<usuario-login></usuario-login>
+<!--{{appCtrl.usuario1}}-->
+<!--<ac-autocomplete fields-to-show="'nombre,apellido'"-->
+                 <!--selected-to="appCtrl.usuario1"-->
+                 <!--search-fields="'nombre,apellido,mail'"-->
+                 <!--search-function="appCtrl.searchUsuario(callback)"></ac-autocomplete>-->
+<!--<ac-autocomplete fields-to-show="'nombre,apellido'"-->
+                 <!--selected-to="appCtrl.usuario2"-->
+                 <!--search-fields="'nombre,apellido,mail'"-->
+                 <!--search-function="appCtrl.searchUsuario(callback)"></ac-autocomplete>-->
 
 
 <div id="nav-bar"></div>
