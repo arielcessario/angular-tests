@@ -11,7 +11,22 @@
                 LAST_NAME: 'Apellido',
                 LOGIN: 'Ingresar',
                 LOGOUT: 'Salir',
-                REGISTER: 'Registrarse'
+                REGISTER: 'Registrarse',
+                DOC_TYPE: 'Tipo de Documento',
+                DOC_NO: 'Número de documento',
+                EMAIL: 'Email',
+                PAGE: 'Página',
+                OF: 'de',
+                GO_TO: 'Ir a',
+                SAVE: 'Guardar',
+                CANCEL: 'Cancelar',
+                DELETE: 'Eliminar',
+                PASSWORD: 'Password',
+                YES: 'Si',
+                NO: 'No',
+                ACTIVE: 'Activo',
+                PHONE: 'Teléfono',
+                ADDRESS: 'Dirección'
             }
         }
     }

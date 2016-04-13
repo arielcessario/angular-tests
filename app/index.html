@@ -165,18 +165,20 @@
     <button ng-click="appCtrl.post();">Post</button>
 </div>
 <!--<ac-usuarios-administracion test="lsls"></ac-usuarios-administracion>-->
+<ac-waiting texto="'Por favor aguarde...'"></ac-waiting>
 <usuario-login></usuario-login>
 <usuario-logout></usuario-logout>
 <!--{{appCtrl.usuario1}}-->
-<ac-autocomplete fields-to-show="'nombre,apellido'"
-                 selected-to="appCtrl.usuario1"
-                 search-fields="'nombre,apellido,mail'"
-                 search-function="appCtrl.searchUsuario(callback)"></ac-autocomplete>
+<!--<ac-autocomplete fields-to-show="'nombre,apellido'"-->
+                 <!--selected-to="appCtrl.usuario1"-->
+                 <!--search-fields="'nombre,apellido,mail'"-->
+                 <!--search-function="appCtrl.searchUsuario(callback)"></ac-autocomplete>-->
 <!--<ac-autocomplete fields-to-show="'nombre,apellido'"-->
                  <!--selected-to="appCtrl.usuario2"-->
                  <!--search-fields="'nombre,apellido,mail'"-->
                  <!--search-function="appCtrl.searchUsuario(callback)"></ac-autocomplete>-->
 
+<ac-usuarios-administracion></ac-usuarios-administracion>
 
 <div id="nav-bar"></div>
 <div ng-view id="view"></div>

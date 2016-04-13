@@ -35,11 +35,12 @@
         }])
         .controller('AppCtrl', AppCtrl);
 
-    AppCtrl.$inject = ['$http', 'UserService'];
-    function AppCtrl($http, UserService) {
+    AppCtrl.$inject = ['UserService'];
+    function AppCtrl(UserService) {
         var vm = this;
         vm.usuario1 = {};
         vm.usuario2 = {};
+
 
         vm.searchUsuario = searchUsuario;
 
