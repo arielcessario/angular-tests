@@ -26,7 +26,9 @@
                 NO: 'No',
                 ACTIVE: 'Activo',
                 PHONE: 'Teléfono',
-                ADDRESS: 'Dirección'
+                ADDRESS: 'Dirección',
+                BRANCH: 'Sucursal',
+                POS: 'Caja'
             }
         }
     }

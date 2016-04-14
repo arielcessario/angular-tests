@@ -1,5 +1,27 @@
-/* Welcome to Compass. Use this file to write IE specific override styles.
- * Import this file using the following HTML or equivalent:
- * <!--[if IE]>
- *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
- * <![endif]--> */
+@import "compass";
+
+body{
+  font-family: Arial;
+}
+
+.form{
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.input{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.lista{
+  width: 100%;
+  table{
+    width: 100%;
+  }
+}
