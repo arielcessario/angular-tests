@@ -2,10 +2,12 @@
 
 body {
   font-family: Arial;
+  margin: 0;
+  padding: 0;
 }
 
 .form {
-  width: 100%;
+  width: 99%;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -60,7 +62,4 @@ ac-usuarios-administracion {
   -ms-transform: translate(100%, 0) !important;
   -o-transform: translate(100%, 0) !important;
   transform: translate(100%, 0) !important;
-}
-
-.form {
 }
