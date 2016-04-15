@@ -28,7 +28,8 @@
                 PHONE: 'Teléfono',
                 ADDRESS: 'Dirección',
                 BRANCH: 'Sucursal',
-                POS: 'Caja'
+                POS: 'Caja',
+                NEW: 'Nuevo'
             }
         }
     }

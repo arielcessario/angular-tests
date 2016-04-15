@@ -1,10 +1,10 @@
 @import "compass";
 
-body{
+body {
   font-family: Arial;
 }
 
-.form{
+.form {
   width: 100%;
   margin: 10px;
   display: flex;
@@ -13,15 +13,54 @@ body{
   align-items: center;
 }
 
-
-.input{
+.input {
   display: flex;
   flex-direction: column-reverse;
 }
 
-.lista{
+.lista {
   width: 100%;
-  table{
+  position: absolute;
+  table {
     width: 100%;
+    tr{
+      cursor: pointer;
+    }
   }
+}
+
+ac-usuarios-administracion {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.details {
+  background-color: green;
+  width: 50%;
+  -webkit-transform: translate(200%, 0);
+  -moz-transform: translate(200%, 0);
+  -ms-transform: translate(200%, 0);
+  -o-transform: translate(200%, 0);
+  transform: translate(200%, 0);
+
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out ;
+  -ms-transition: transform 0.4s ease-in-out ;
+  -o-transition: transform 0.4s ease-in-out ;
+  transition: transform 0.4s ease-in-out ;
+}
+
+.details-open {
+  -webkit-transform: translate(100%, 0) !important;
+  -moz-transform: translate(100%, 0) !important;
+  -ms-transform: translate(100%, 0) !important;
+  -o-transform: translate(100%, 0) !important;
+  transform: translate(100%, 0) !important;
+}
+
+.form {
 }
