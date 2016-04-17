@@ -25,50 +25,66 @@ button {
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
-  padding: 0;
+  text-align: center;
 }
 
 /* line 31, ../sass/styles.scss */
 .form {
   width: 99%;
   margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #79996D;
+  background: #79996d;
+  background: -moz-linear-gradient(top, #79996d 0%, #99bf8b 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #79996d), color-stop(100%, #99bf8b));
+  background: -webkit-linear-gradient(top, #79996d 0%, #99bf8b 100%);
+  background: -o-linear-gradient(top, #79996d 0%, #99bf8b 100%);
+  background: -ms-linear-gradient(top, #79996d 0%, #99bf8b 100%);
+  background: linear-gradient(to bottom, #79996d 0%, #99bf8b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79996d', endColorstr='#99bf8b', GradientType=0 );
 }
 
-/* line 41, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 .input {
   display: flex;
   flex-direction: column-reverse;
 }
 
-/* line 48, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 .lista {
-  margin: 10px auto;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 10px;
   font-family: 'Raleway', sans-serif;
   color: white;
   width: 100%;
   position: absolute;
-  background-color: #79996D;
+  background: #79996d;
+  background: -moz-linear-gradient(top, #79996d 0%, #99bf8b 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #79996d), color-stop(100%, #99bf8b));
+  background: -webkit-linear-gradient(top, #79996d 0%, #99bf8b 100%);
+  background: -o-linear-gradient(top, #79996d 0%, #99bf8b 100%);
+  background: -ms-linear-gradient(top, #79996d 0%, #99bf8b 100%);
+  background: linear-gradient(to bottom, #79996d 0%, #99bf8b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79996d', endColorstr='#99bf8b', GradientType=0 );
   text-align: center;
 }
-/* line 57, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 .lista table {
   width: 90%;
   margin: 10px auto;
 }
-/* line 60, ../sass/styles.scss */
+/* line 75, ../sass/styles.scss */
 .lista table td {
   padding: 10px;
   background-color: #293333;
   color: white;
   text-align: left;
 }
-/* line 67, ../sass/styles.scss */
+/* line 82, ../sass/styles.scss */
 .lista table th {
   padding: 10px;
   font-size: 18px;
@@ -77,24 +93,27 @@ body {
   -webkit-border-radius: 5px;
 }
 
-/* line 81, ../sass/styles.scss */
+/* line 96, ../sass/styles.scss */
 .lista table td:hover {
   cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
   background-color: white;
   color: #293333;
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/* line 93, ../sass/styles.scss */
+/* line 110, ../sass/styles.scss */
 button {
   font-family: 'Raleway', sans-serif;
   padding: 10px;
+  margin: 10px;
   color: white;
   background-color: #293333;
   -webkit-border-radius: 3px;
 }
 
-/* line 102, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 button:hover {
   cursor: pointer;
   background-color: white;
@@ -102,7 +121,45 @@ button:hover {
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/* line 111, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
+#facebook {
+  background-color: transparent;
+  background-image: url(facebook.svg);
+}
+
+/* line 134, ../sass/styles.scss */
+#google {
+  background-color: transparent;
+  background-image: url(gmail.svg);
+}
+
+/* line 139, ../sass/styles.scss */
+input.buscador {
+  width: 89%;
+  height: 40px;
+  margin: 30px auto;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+  color: #293333;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* line 154, ../sass/styles.scss */
+.form span {
+  color: white;
+}
+
+/* line 158, ../sass/styles.scss */
+.form a {
+  color: white;
+}
+
+/* line 164, ../sass/styles.scss */
 ac-usuarios-administracion {
   display: flex;
   flex-direction: row;
@@ -111,7 +168,7 @@ ac-usuarios-administracion {
   max-width: 100%;
 }
 
-/* line 120, ../sass/styles.scss */
+/* line 173, ../sass/styles.scss */
 .details {
   padding: 10px;
   background-color: transparent;
@@ -128,7 +185,7 @@ ac-usuarios-administracion {
   transition: transform 0.4s ease-in-out;
 }
 
-/* line 137, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 .details-open {
   -webkit-transform: translate(400%, 0) !important;
   -moz-transform: translate(400%, 0) !important;
@@ -137,31 +194,73 @@ ac-usuarios-administracion {
   transform: translate(400%, 0) !important;
 }
 
-/* line 145, ../sass/styles.scss */
+/* line 198, ../sass/styles.scss */
 .detalle-container {
   color: white;
   padding: 15px 30px 25px 30px;
   width: 300px;
   margin: 10px auto;
   position: relative;
-  background: #536363;
-  border: 1px solid black;
+  background-color: #536363;
   border-radius: 5px;
 }
-/* line 158, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 .detalle-container input {
-  width: 93%;
+  width: 90%;
   font-family: 'Raleway', sans-serif;
   padding: 10px;
   font-size: 14px;
+  margin-left: 25px;
   color: #9d9e9e;
   background: #fff;
   border-radius: 5px;
 }
-/* line 175, ../sass/styles.scss */
+/* line 228, ../sass/styles.scss */
 .detalle-container span {
   font-size: 16px;
   font-weight: bold;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+/* line 238, ../sass/styles.scss */
+.icon-mail-input {
+  position: absolute;
+  margin-top: -43px;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  background-image: url(mail.svg);
+}
+
+/* line 250, ../sass/styles.scss */
+.icon-pass-input {
+  position: absolute;
+  margin-top: -43px;
+  margin-left: -25px;
+  width: 50px;
+  height: 50px;
+  background-image: url(pass.svg);
+}
+
+/* line 263, ../sass/styles.scss */
+select {
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: 16px;
+  margin: auto;
+  overflow: hidden;
+  padding: 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
