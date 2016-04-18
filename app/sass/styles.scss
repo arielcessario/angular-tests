@@ -29,7 +29,7 @@ body {
 }
 
 .form {
-  width: 99%;
+  width: 100%;
   margin: 10px;
   padding: 10px;
   display: flex;
@@ -61,14 +61,13 @@ body {
   color: white;
   width: 100%;
   position: absolute;
-  background: rgba(121,153,109,1);
-  background: -moz-linear-gradient(top, rgba(121,153,109,1) 0%, rgba(153,191,139,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(121,153,109,1)), color-stop(100%, rgba(153,191,139,1)));
-  background: -webkit-linear-gradient(top, rgba(121,153,109,1) 0%, rgba(153,191,139,1) 100%);
-  background: -o-linear-gradient(top, rgba(121,153,109,1) 0%, rgba(153,191,139,1) 100%);
-  background: -ms-linear-gradient(top, rgba(121,153,109,1) 0%, rgba(153,191,139,1) 100%);
-  background: linear-gradient(to bottom, rgba(121,153,109,1) 0%, rgba(153,191,139,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79996d', endColorstr='#99bf8b', GradientType=0 );  text-align: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
+  background: rgb(229,112,231); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(229,112,231,1) 0%, rgba(200,94,199,1) 47%, rgba(168,73,163,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(229,112,231,1) 0%,rgba(200,94,199,1) 47%,rgba(168,73,163,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(229,112,231,1) 0%,rgba(200,94,199,1) 47%,rgba(168,73,163,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
+
   table {
     width: 90%;
     margin: 10px auto;
@@ -98,7 +97,7 @@ body {
       -webkit-transition: all 0.3s ease-in-out;
       td{
         background-color: white;
-        font-size: 18px;
+        transform:scale(1.1);
         font-weight: bold;
         color: #293333;
         -webkit-transition: all 0.3s ease-in-out;
@@ -176,13 +175,12 @@ ac-usuarios-administracion {
 .details {
   padding: 10px;
   background-color: transparent;
-  width: 19%;
+  width:360px;
   -webkit-transform: translate(600%, 0);
   -moz-transform: translate(600%, 0);
   -ms-transform: translate(600%, 0);
   -o-transform: translate(600%, 0);
   transform: translate(600%, 0);
-
   -webkit-transition: transform 0.4s ease-in-out;
   -moz-transition: transform 0.4s ease-in-out ;
   -ms-transition: transform 0.4s ease-in-out ;
@@ -191,11 +189,11 @@ ac-usuarios-administracion {
 }
 
 .details-open {
-  -webkit-transform: translate(400%, 0) !important;
-  -moz-transform: translate(400%, 0) !important;
-  -ms-transform: translate(400%, 0) !important;
-  -o-transform: translate(400%, 0) !important;
-  transform: translate(400%, 0) !important;
+  -webkit-transform: translate(230%, 0) !important;
+  -moz-transform: translate(230%, 0) !important;
+  -ms-transform: translate(230%, 0) !important;
+  -o-transform: translate(230%, 0) !important;
+  transform: translate(230%, 0) !important;
 }
 
 .detalle-container{
