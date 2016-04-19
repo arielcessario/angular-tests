@@ -208,6 +208,9 @@ button {
 }
 
 .ac-error-message {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   padding: 30px;
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
