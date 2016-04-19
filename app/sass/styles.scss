@@ -209,9 +209,6 @@ button {
 }
 
 .ac-error-message {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
   padding: 30px;
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
@@ -237,6 +234,9 @@ button {
 }
 
 .error-message {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   background-color: #a90329;
   color: white;
   width: 266px;
