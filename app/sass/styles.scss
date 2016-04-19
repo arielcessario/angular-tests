@@ -235,8 +235,8 @@ button {
 
 .error-message {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  top: 16px !important;
+  left: 0px !important;
   background-color: #a90329;
   color: white;
   width: 266px;
