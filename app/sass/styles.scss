@@ -88,13 +88,13 @@ body {
 }
 
 .lista {
-  margin-right: 10px;
-  margin-left: 10px;
-  padding: 10px;
+  //margin-right: 10px;
+  //margin-left: 10px;
+  //padding: 10px;
   font-family: 'Raleway', sans-serif;
   color: white;
   width: 100%;
-  position: absolute;
+  //position: absolute;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
   background: rgb(229, 112, 231); /* Old browsers */
   background: -moz-linear-gradient(top, rgba(229, 112, 231, 1) 0%, rgba(200, 94, 199, 1) 47%, rgba(168, 73, 163, 1) 100%); /* FF3.6-15 */
@@ -176,6 +176,8 @@ body {
     }
   }
 }
+
+
 
 .paginacion-paginas,
 .paginacion-go-to {
@@ -327,12 +329,16 @@ ac-usuarios-administracion {
 .details {
   padding: 10px;
   background-color: transparent;
-  width: 360px;
-  -webkit-transform: translate(600%, 0);
-  -moz-transform: translate(600%, 0);
-  -ms-transform: translate(600%, 0);
-  -o-transform: translate(600%, 0);
-  transform: translate(600%, 0);
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: translate(1000px, 0);
+  -moz-transform: translate(1000px, 0);
+  -ms-transform: translate(1000px, 0);
+  -o-transform: translate(1000px, 0);
+  transform: translate(1000px, 0);
   -webkit-transition: transform 0.4s ease-in-out;
   -moz-transition: transform 0.4s ease-in-out;
   -ms-transition: transform 0.4s ease-in-out;
@@ -341,11 +347,11 @@ ac-usuarios-administracion {
 }
 
 .details-open {
-  -webkit-transform: translate(230%, 0) !important;
-  -moz-transform: translate(230%, 0) !important;
-  -ms-transform: translate(230%, 0) !important;
-  -o-transform: translate(230%, 0) !important;
-  transform: translate(230%, 0) !important;
+  -webkit-transform: translate(0, 0) !important;
+  -moz-transform: translate(0, 0) !important;
+  -ms-transform: translate(0, 0) !important;
+  -o-transform: translate(0, 0) !important;
+  transform: translate(0, 0) !important;
 }
 
 .detalle-container {
@@ -366,7 +372,8 @@ ac-usuarios-administracion {
     padding: 10px;
     font-size: 14px;
     margin-left: 25px;
-    color: #9d9e9e;
+    color: black;
+    font-weight: bold;
     //text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
     background: #fff;
     //border: 1px solid #fff;
