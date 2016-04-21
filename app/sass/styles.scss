@@ -1,33 +1,11 @@
 //////////////////////////////////////////paleta de colores Mesero Virtual
 
 //botones
-//$color1 : #293333;
+$color1 : #293333;
 
 //degradado_principal
-//$color2 : #ff5db1;
-//$color3 : #ef017c;
-
-
-//@mixin degradado_principal($color2, $color3) {
-  //background-color: $color2;
-  //background-image: -webkit-gradient(linear, left top, left bottom, from($color2), to($color3));
-  //background-image: -webkit-linear-gradient(top, $color2, $color3);
-  //background-image:    -moz-linear-gradient(top, $color2, $color3);
-  //background-image:     -ms-linear-gradient(top, $color2, $color3);
-  //background-image:      -o-linear-gradient(top, $color2, $color3);
-  //background-image:         linear-gradient(top, $color2, $color3);
-  //filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$color2}', end-colourStr='#{$color3}');
-//}
-
-
-//////////////////////////////////////////paleta de colores Bayres
-
-//botones
-$color1 : Green;
-
-//degradado_principal
-$color2 : Green;
-$color3 : Darkgreen;
+$color2 : #ad3873;
+$color3 : #4d1933;
 
 
 @mixin degradado_principal($color2, $color3) {
@@ -42,6 +20,29 @@ $color3 : Darkgreen;
 }
 
 
+//////////////////////////////////////////paleta de colores Bayres
+
+//botones
+//$color1 : Green;
+
+//degradado_principal
+//$color2 : Green;
+//$color3 : Darkgreen;
+
+
+
+//@mixin degradado_principal($color2, $color3) {
+  //background-color: $color2;
+  //background-image: -webkit-gradient(linear, left top, left bottom, from($color2), to($color3));
+  //background-image: -webkit-linear-gradient(top, $color2, $color3);
+  //background-image:    -moz-linear-gradient(top, $color2, $color3);
+  //background-image:     -ms-linear-gradient(top, $color2, $color3);
+  //background-image:      -o-linear-gradient(top, $color2, $color3);
+  //background-image:         linear-gradient(top, $color2, $color3);
+  //filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$color2}', end-colourStr='#{$color3}');
+//}
+
+
 
 
 @import "compass";
@@ -51,6 +52,14 @@ $color3 : Darkgreen;
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
+
+*:focus {
+  outline: none;
+}
+
+
+
+
 button {
   background: none;
   border: 0;
@@ -308,15 +317,54 @@ button {
 
 button:hover {
   cursor: pointer;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
   @include degradado_principal($color2, $color3);
-  color: #79996D;
   -webkit-transition: all 0.3s ease-in-out;
   color: white;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
+
+#ac-autocomplete-5 {
+ min-width: 50%;
+  margin: 10px auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  font-weight: bold;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+#ac-autocomplete-5:focus{
+  border: solid 1px $color3;
+  color: $color3;
+  -webkit-animation: all ease-in .4;
+  -moz-animation: all ease-in .4;
+  animation: all ease-in .4;
+
+}
+
+
+
+#ac-autocomplete-5 div{
+  background-color: $color3;
+  color: white;
+}
+
+
+
+#ac-autocomplete-5 div:hover {
+  cursor: pointer;
+  background-color: $color3;
+  color: white;
+}
+
+
+
 
 #facebook {
   background-color: transparent;
