@@ -578,3 +578,32 @@ select {
   width: 85%;
 
 }
+
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.ac-autocomplete-panel{
+  position: absolute;
+  z-index: 1;
+  background-color: #eee;
+  //margin-top: 41px;
+  margin-top: -10px;
+  left: 24.5%;
+  width: 50%;
+}
+ac-autocomplete > ul > li{
+  padding: 5px;
+}
+.ac-autocomplete-selected{
+  background-color: #77b300;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#77b300), to(#446600));
+  background-image: -webkit-linear-gradient(top, #77b300, #446600);
+  background-image: -moz-linear-gradient(top, #77b300, #446600);
+  background-image: -ms-linear-gradient(top, #77b300, #446600);
+  background-image: -o-linear-gradient(top, #77b300, #446600);
+  background-image: linear-gradient(to bottom, #77b300, #446600);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#77b300', end-colourStr='#446600');
+}
+
