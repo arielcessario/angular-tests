@@ -19,6 +19,10 @@ $color3 : #4d1933;
   filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$color2}', end-colourStr='#{$color3}');
 }
 
+//fondo body
+$color4 : #f9ecf2;
+
+
 
 //////////////////////////////////////////paleta de colores Bayres
 
@@ -116,6 +120,9 @@ body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   text-align: center;
+  background-color: $color4;
+
+
 }
 
 .form {
@@ -333,15 +340,15 @@ button:hover {
   padding: 5px;
   font-weight: bold;
   -webkit-border-radius: 2px;
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
-  border: none;
+  border: solid 1px black;
 }
 
 #ac-autocomplete-5:focus{
   border: solid 1px $color3;
   color: $color3;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
   -webkit-animation: all ease-in .4;
   -moz-animation: all ease-in .4;
   animation: all ease-in .4;
