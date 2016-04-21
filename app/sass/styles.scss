@@ -1,11 +1,38 @@
 //////////////////////////////////////////paleta de colores Mesero Virtual
 
 //botones
-$color1 : #293333;
+//$color1 : #293333;
 
 //degradado_principal
-$color2 : #ad3873;
-$color3 : #4d1933;
+//$color2 : #ad3873;
+//$color3 : #4d1933;
+
+
+//@mixin degradado_principal($color2, $color3) {
+  //background-color: $color2;
+  //background-image: -webkit-gradient(linear, left top, left bottom, from($color2), to($color3));
+  //background-image: -webkit-linear-gradient(top, $color2, $color3);
+  //background-image:    -moz-linear-gradient(top, $color2, $color3);
+  //background-image:     -ms-linear-gradient(top, $color2, $color3);
+  //background-image:      -o-linear-gradient(top, $color2, $color3);
+  //background-image:         linear-gradient(top, $color2, $color3);
+  //filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$color2}', end-colourStr='#{$color3}');
+//}
+
+//fondo body
+//$color4 : #f9ecf2;
+
+
+
+//////////////////////////////////////////paleta de colores Bayres
+
+//botones
+$color1 : #334d00;
+
+//degradado_principal
+$color2 : #77b300;
+$color3 : #446600;
+
 
 
 @mixin degradado_principal($color2, $color3) {
@@ -20,31 +47,7 @@ $color3 : #4d1933;
 }
 
 //fondo body
-$color4 : #f9ecf2;
-
-
-
-//////////////////////////////////////////paleta de colores Bayres
-
-//botones
-//$color1 : Green;
-
-//degradado_principal
-//$color2 : Green;
-//$color3 : Darkgreen;
-
-
-
-//@mixin degradado_principal($color2, $color3) {
-  //background-color: $color2;
-  //background-image: -webkit-gradient(linear, left top, left bottom, from($color2), to($color3));
-  //background-image: -webkit-linear-gradient(top, $color2, $color3);
-  //background-image:    -moz-linear-gradient(top, $color2, $color3);
-  //background-image:     -ms-linear-gradient(top, $color2, $color3);
-  //background-image:      -o-linear-gradient(top, $color2, $color3);
-  //background-image:         linear-gradient(top, $color2, $color3);
-  //filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$color2}', end-colourStr='#{$color3}');
-//}
+$color4 : lightgrey;
 
 
 
