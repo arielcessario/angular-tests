@@ -332,7 +332,7 @@ button:hover {
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-ac-autocomplete {
+ac-autocomplete input{
  min-width: 50%;
   margin: 10px auto;
   font-family: 'Raleway', sans-serif;
@@ -357,7 +357,7 @@ ac-autocomplete:focus{
 
 
 
-ac-autocomplete ul li{
+ac-autocomplete input ul li{
   background-color: $color3;
   color: white;
   width: 300px;
@@ -384,7 +384,7 @@ input.buscador {
   height: 40px;
   margin: 30px auto;
   padding: 5px;
-  -webkit-border-radius: 10px;
+  -webkit-border-radius: 5px;
   font-family: 'Raleway', sans-serif;
   font-size: 22px;
   font-weight: bolder;
@@ -444,7 +444,7 @@ ac-usuarios-administracion {
   transform: translate(0, 0) !important;
 }
 
-.detalle-container {
+.detalle-container, .detalle-container-2 {
   color: white;
   padding: 15px 30px 25px 30px;
   width: 300px;
@@ -483,6 +483,14 @@ ac-usuarios-administracion {
   }
 
 }
+
+.detalle-container-2{
+  width: 600px;
+  input{
+    margin: 10px auto;
+  }
+}
+
 
 .login-iconos {
   .input {
@@ -557,6 +565,6 @@ select {
   padding: 5px 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100%;
+  width: 85%;
 
 }
