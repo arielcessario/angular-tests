@@ -361,10 +361,15 @@ ac-autocomplete input ul li{
   background-color: $color3;
   color: white;
   width: 300px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
 }
 
 
-
+ac-waiting{
+  font-weight: bolder;
+  margin: 10px auto;
+}
 
 
 
@@ -393,6 +398,8 @@ input.buscador {
   -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
+
+
 
 .form span {
   color: white;
